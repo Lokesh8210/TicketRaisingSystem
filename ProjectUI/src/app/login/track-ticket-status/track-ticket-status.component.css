@@ -1,0 +1,32 @@
+/* Add this CSS to your component's style file or your global styles (styles.css) */
+
+.card {
+    margin-top: 20px; /* Adjust the margin as needed */
+}
+
+.card-title {
+    color: #0e1114; /* Title color, you can change it to your preferred color */
+}
+
+.table th,
+.table td {
+    text-align: center;
+   
+    
+}
+
+/* Style for ticket status badges */
+.badge-primary {
+    background-color: #007bff;
+}
+
+.badge-warning {
+    background-color: #ffc107;
+}
+
+/* Add more styles for other badge classes as needed */
+
+/* Optional: Add hover effect to table rows */
+.table-hover tbody tr:hover {
+    background-color: #f8f9fa; /* Light gray background on hover, adjust as needed */
+}

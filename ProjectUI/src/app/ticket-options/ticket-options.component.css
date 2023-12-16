@@ -1,0 +1,29 @@
+ 
+
+.logo
+{
+    font-size: 30px;
+    color: #f6f6f6;
+    font-weight: bold;
+}
+.nav_bg
+{
+    background: linear-gradient(to bottom left, #0088ff, #00f2ff, #1500ff);
+}
+/* Add this CSS to your styles.css or component-specific style file */
+
+.background-section {
+    background-image: url('https://www.scnsoft.com/_default_upload_bucket/automated-ticketing-system.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh; /* Set initial height to 100% of the viewport height */
+  
+    /* Responsive styles */
+    @media (max-width: 768px) {
+      height: 50vh; /* Adjust the height for smaller screens */
+    }
+  
+    /* Additional styles for responsiveness can be added based on your design requirements */
+  }
+  

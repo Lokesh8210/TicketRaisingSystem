@@ -1,0 +1,138 @@
+<section class="vh-100" style="background-image: url('https://t4.ftcdn.net/jpg/04/26/51/77/360_F_426517786_a6AlcE9A6jcaQcZ3fkghx3Pth4JeEOie.jpg'); background-size: cover;">
+  <!-- <nav class="navbar navbar-expand-lg bg-body-tertiary" style="background: linear-gradient(to bottom left, #ff009d, #00f2ff, #7905bc);">
+    <h2 class="text-success-dark">Raised Tickets list</h2>
+
+    <div class="Logout">
+      <form class="form-inline d-flex align-items-end flex-row">
+          <button class="btn btn-outline-info my-2 my-sm-0" type="submit" (click)="logout()">
+              <a routerLink="['/login']">Logout</a>
+          </button>
+      </form>
+  </div>
+
+  </nav> -->
+
+  <nav class="navbar navbar-expand-lg bg-body-tertiary" style="background: linear-gradient(to bottom left, #ff009d, #00f2ff, #7905bc);">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <h2 class="text-success-dark">Raised Tickets list</h2>
+      </div>
+      <div class="navbar-collapse justify-content-end">
+        <div class="Logout">
+          <form class="form-inline d-flex align-items-end flex-row">
+            <button class="btn btn-outline-dark my-2 my-sm-0" type="submit" (click)="logout()">
+              <a routerLink="['/login']">Logout</a>
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </nav>
+  
+
+  
+  <table class="table table-bordered table-striped">
+      <thead class="thead-dark">
+          <tr>
+              <th>Ticket Id:</th>
+              <th>IssueType:</th>
+              <th>Description:</th>
+              <th>Assigne To</th>
+              <th>Ticket Status:</th>
+              <th>Action</th>
+          </tr>
+      </thead>
+      <tbody>
+          <tr *ngFor="let ticket of tickets">
+              <td>{{ticket.ticketId}}</td>
+              <td>{{ticket.issueType}}</td>
+              <td>{{ticket.description}}</td>
+              <td> {{ticket.assignedTo}}</td>
+              <td>{{ticket.status}}</td>
+              <td><button class="btn btn-primary" (click)="editTicket(ticket.ticketId)" type="button">Assign</button></td>
+          </tr>
+      </tbody>
+  </table>
+
+
+</section>
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- <div>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="container-fluid">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#"><b>{{ pageTitle }}</b></a>
+            </li> -->
+          <!-- </ul> -->
+          <!-- <form class="d-flex" (ngSubmit)="onSubmit($event)">
+            <button class="btn btn btn-dark" type="submit">{{ logoutButtonLabel }}</button>
+          </form> -->
+        <!-- </div>
+      </div>
+    </nav>
+ 
+    <table class="table">
+      <thead>
+        <tr>
+          <th scope="col">TicketID</th>
+          <th scope="col">EmpID</th>
+          <th scope="col">RaisedDate</th>
+          <th scope="col">IssueType</th>
+          <th scope="col">Description</th>
+          <th scope="col">AssignTo</th>
+          <th scope="col"></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let ticket of adminArray">
+          <td>{{ ticket.ticketId }}</td> 
+         <td>{{ ticket.issueType }}</td>
+         <td>{{ ticket.description }}</td>
+         <td>
+           {{ ticket.status }}
+         </td>
+         <td>
+            <div class="mb-3">
+              <select class="form-control" id="category" name="category" required>
+                <option value="" disabled selected>Select Category</option>
+                <option value="hardware">Support1-HW</option>
+                <option value="software">Support2-SW</option>
+              </select>
+            </div>
+          </td>
+          <td>
+            <button type="button" class="btn" style="background-color: blue;" (click)="assignTicket(ticket)">Assign</button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>  -->

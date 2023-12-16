@@ -1,0 +1,35 @@
+<div class="B">
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <a class="navbar-brand" href="#">Ticket Raising System</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+              <button class="nav-link btn btn-primary" (click)="raiseTicket()"><a
+                      routerLink="['/raiseTicket']"></a>Raise a Ticket</button>
+          </li>
+          <li class="nav-item">
+              <button class="nav-link btn btn-success" (click)="trackTicketStatus()"><a
+                      routerLink="['/trackTicketStatus']"> </a> Ticket Status</button>
+          </li>
+      </ul>
+  </div>
+  <div class="Logout">
+    <form class="form-inline d-flex align-items-end flex-row ">
+        <button class="btn btn-outline-info my-2 my-sm-0" type="submit" (click)="logout()">
+            <a routerLink="['/login']">Logout</a>
+        </button>
+    </form>
+</div>
+</nav>
+</div>
+<section class="vh-100 background-section">
+    <!-- Content goes here -->
+  </section>
+  
+<!-- <section class="vh-100" style="background-image: url('https://www.scnsoft.com/_default_upload_bucket/automated-ticketing-system.png'); background-size: cover;"></section> -->

@@ -1,0 +1,70 @@
+.home-container {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .home-header {
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .home-title {
+    font-size: 24px;
+  }
+  
+  .home-subtitle {
+    font-size: 18px;
+  }
+  
+  .home-main {
+    padding: 20px;
+  }
+  
+  .order-request-section {
+    margin-bottom: 20px;
+  }
+  
+  .order-request-title {
+    font-size: 20px;
+  }
+  
+  .order-request-buttons {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .order-button,
+  .request-button {
+    width: 50%;
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    font-size: 16px;
+  }
+  
+  .my-order-request-status-section,
+  .my-report-status-section {
+    margin-bottom: 20px;
+  }
+  
+  .my-order-request-status-title,
+  .my-report-status-title {
+    font-size: 20px;
+  }
+  
+  .my-order-request-status-table,
+  .my-report-status-table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .my-order-request-status-table th,
+  .my-report-status-table th {
+    background-color: #f7f7f7;
+  }
+  
+  .my-order-request-status-table td,
+  .my-report-status-table td {
+    padding: 10px;
+  }
+  

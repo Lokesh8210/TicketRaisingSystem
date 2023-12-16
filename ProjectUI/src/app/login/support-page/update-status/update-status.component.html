@@ -1,0 +1,34 @@
+
+<section class="vh-100" style="background-image: url('https://img.freepik.com/premium-photo/abstract-background-images-wallpaper-ai-generated_643360-44588.jpg'); background-size: cover;">
+ 
+  <div class="container">
+    
+    <nav class="navbar navbar-expand-lg bg-body-tertiary" style="background: linear-gradient(to bottom left, #0088ff, #00f2ff, #004cff); padding: 10px;">
+      <h2>Update Ticket Status</h2>
+    </nav>
+    <!-- Form for editing selective properties -->
+    <form (ngSubmit)="updateTicket()" autocomplete="off" novalidate style="max-width: 500px; margin: auto;">
+      <!-- <div class="form-group">
+        <label for="Description">ticket ID:</label>
+        <input [(ngModel)]="ticket.ticketId" name="ticketId" id="ticketId" type="text" class="form-control" required>
+      </div> -->
+      <!-- <div class="form-group">
+        <label for="description">Description</label>
+        <input [(ngModel)]="ticket.description" name="description" id="description" type="text" class="form-control" required>
+      </div> -->
+      <div class="form-group">
+        <label for="status">Update Status</label>
+        <select [(ngModel)]="ticket.status" name="status" id="status" class="form-control" style="width: 100%;" required>
+          <option value="" disabled>Select Status</option>
+          <option value="Open">Open</option>
+          <option value="In Progress">In Progress</option>
+          <option value="Closed">Closed</option>
+      
+        </select>
+      </div>
+      
+ 
+      <button type="submit" class="btn btn-primary">Update ticket</button>
+    </form>
+  </div>
+</section>

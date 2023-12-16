@@ -1,0 +1,47 @@
+<section class="vh-100" style="background-image: url('https://img.freepik.com/premium-photo/abstract-background-images-wallpaper-ai-generated_643360-8554.jpg'); background-size: cover;">
+  <div class="container bg_color">
+    <br/>
+    <div class="row">
+      <div class="col-md-6 offset-md-3">
+        <div class="card">
+          <div class="card-header"
+          style="background: linear-gradient(to bottom left, #0088ff, #00f2ff, #1500ff);">
+            <h3 class="card-title">Raise Ticket</h3>
+          </div>
+          <div class="card-body">
+            <form #raiseTicketForm="ngForm" (ngSubmit)="raiseTicket(raiseTicketForm.value)">
+              <div class="mb-3">
+                <label for="IssueType"><b>IssueType:</b></label>
+                <select class="form-control" id="IssueType" name="IssueType" [(ngModel)]="IssueType" required>
+                  <option value="" disabled selected>Select IssueType</option>
+                  <option value="hardware">Hardware</option>
+                  <option value="software">Software</option>
+                </select>
+              </div>
+              <div class="mb-3">
+                <label for="EmpId" class="form-label">Employee ID:</label>
+                <input type="number" class="form-control" id="EmpId" name="EmpId" aria-describedby="EmpIdHelp"
+                       [(ngModel)]="EmpId" required>
+                <div id="EmpIdHelp" class="form-text">Enter employee ID</div>
+              </div>
+              <div class="mb-3">
+                <label for="description" class="form-label">Description</label>
+                <textarea class="form-control" id="description" name="description" rows="3"
+                       [(ngModel)]="description" required></textarea>
+                <div id="descriptionHelp" class="form-text">Provide a detailed description of your issue, including
+                  any relevant error messages.</div>
+              </div>
+              <button type="submit" class="btn btn-primary" [disabled]="raiseTicketForm.invalid">Raise Ticket</button>
+             
+            </form>
+            <div class="mt-3">
+              <button class="btn btn-outline-secondary" (click)="goToTicketOptionsPage()">Back</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+</section>
+
